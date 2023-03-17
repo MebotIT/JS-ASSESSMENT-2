@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Find Two Numbers</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p id="output"></p>
+
+	<script>
+        function findTwoNumbers(arr, target) {
+    let seen = new Set();
+    for (let num of arr) {
+        let complement = target - num;
+        if (seen.has(complement)) {
+            return [complement, num];
+        }
+        seen.add(num);
+    }
+    return [];
+}
+let input = [3,4,8,6];
+let target =10;
+let result = findTwoNumbers(input, target);
+document.getElementById("output").innerHTML = result.toString();	
+	</script>
+</body>
+</html>
+
+</body>
+</html>
