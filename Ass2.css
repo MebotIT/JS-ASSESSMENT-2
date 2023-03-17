@@ -1,0 +1,33 @@
+.head{
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.dt{
+    font-size: 40px;
+    background-color:rgb(219, 198, 198);
+    color:red;
+}
+.quote{
+    text-align: center;
+    font-size: 40px;
+}
+.year{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    background-color: black;
+}
+.click{
+    text-align: center;
+    color: red;
+    font-size: 15px;
+
+
+}
+
