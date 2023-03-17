@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head-1">
+        <h2 id="top">My Website</h2>
+    </div>
+    <div class="container">
+        <div class="time"> <span id="hours">&nbsp;00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span id="">:</span>
+            <span id="seconds">00 .</span>
+            <span id="session">AM</span>
+        </div>
+        <div class="counter">
+            <p>Value: <span id="myValue">0</span></p>
+            <button id="myButton">Click me</button>
+        </div>
+    </div>
+    <div id="myFooter" class="footer"> </div>
+
+
+
+
+    <script>
+
+        //
+        function disp() {
+            var date = new Date()
+            var hrs = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            var session = document.getElementById("session");
+            var salute = document.getElementById("salute")
+            document.getElementById('hours').innerHTML = hrs;
+            document.getElementById('minutes').innerHTML = min;
+            document.getElementById('seconds').innerHTML = sec;
+            document.getElementById('top').style.color = 'white'
+            document.getElementById('salute').style.color = 'white'
+        }
+        setInterval(disp);
+
+        var myButton = document.getElementById("myButton");
+        var myValue = document.getElementById("myValue");
+
+
+        //counter code
+
+
+        var count = 0;
+
+        myButton.addEventListener("click", function () {
+            count++;
+            myValue.textContent = count;
+        });
+
+        // to get current date
+
+
+        var myFooter = document.getElementById("myFooter");
+        var now = new Date();
+
+        var currentYear = now.getFullYear();
+        var currentMonth = now.toLocaleString("default", { month: "long" });
+        var currentDate = now.getDate();
+
+        var dateString = currentMonth + " " + currentDate + ", " + currentYear;
+
+        myFooter.innerHTML = "<p>&copy; " + currentYear + " My Website. All rights reserved. | " + dateString + "</p>";
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>assignment</title>
+</head>
+
+<body>
+    <script>
+        var n = window.prompt("Enter size of the array");
+        const target1 = window.prompt("enter target");
+        var arr = new Array();
+        var sum = 0;
+        for (let i = 1; i <= n; i++) {
+            arr[i] = parseInt(window.prompt("Enter element " + i));
+            sum = sum + arr[i];
+        }
+        function findTwoNumbers(arr, target) {
+            const s = new Set();
+            for (let num of arr) {
+                const c = target - num;
+                if (s.has(c)) {
+                    return [c, num];
+                }
+                s.add(num);
+            }
+            return [];
+        }
+        const output1 = findTwoNumbers(arr, target1);
+        alert(output1); 
+
+    </script>
+</body>
+
+</html>
