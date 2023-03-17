@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-ass1</title>
+</head>
+<body>
+    <script>
+    
+        function two_Sum(n, target) {
+        const s = new Set();
+        for (let num of n) {
+            const c = target - num;
+            if (s.has(c)) {
+            return [c, num];
+            }
+            s.add(num);
+        }
+        return ['  cannot find the target value'];
+        }
+        document.write(two_Sum([3, 4, 8, 6], 10)); 
+        document.write(two_Sum([1, 2, 3, 4], 8)); 
+
+    </script>
+</body>
+</html>
