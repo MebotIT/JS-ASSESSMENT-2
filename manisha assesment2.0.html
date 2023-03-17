@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            height: 100px;
+            width: 100%;
+            color: aqua;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            height: 50px;
+            width: 100%;
+            color: aqua;
+            text-align: center;
+            padding-top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        My Simple Website
+        <p id="date"></p>
+    </header>
+
+    <div>
+        <p>This is the Counter Section.</p>
+        <p>When You Click the "Click Me" Button the Counter will Increase by one.</p>
+        <p id="counter">0</p>
+        <button onclick="counter()">Click Me</button>
+    </div>
+
+    <footer>
+        <p>© <span id="year"> </span> My Simple Website</p>
+    </footer>
+
+    <script>
+        var currentDatetime = new Date();
+        
+        var d = document.getElementById('date');
+        d.innerText = currentDatetime;
+    
+        function counter(){
+            var c = document.getElementById("counter");
+            var n = parseInt(c.innerText) + 1
+            c.innerHTML = n
+        }
+
+        var currentyear = new Date().getFullYear();
+        var d = document.getElementById('year');
+        d.innerText = currentyear;
+        
+
+
+    </script>
+</body>
+</html>
