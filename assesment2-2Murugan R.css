@@ -1,0 +1,51 @@
+.simple{
+    background-color: rgb(15, 6, 6);
+    height: 100px;
+    width: 1500px;
+}
+.simple h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.simple p{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(207, 61, 61);
+}
+.yy{
+    background-color: rgb(15, 6, 6);
+    height: 100px;
+    width: 1500px;
+    margin-top: 200px;
+}
+#gg input{
+    font-size: 25px;
+    background-color: yellow;
+    margin-top: 200px;
+   margin-left: 850px;
+   border-radius: 10px;
+}
+.yy h4{
+   
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.box{
+    box-shadow: 2px 2px 4px 6px;
+    height: 150px;
+    width: 500px;
+    margin-top: -150px;
+    margin-left: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
