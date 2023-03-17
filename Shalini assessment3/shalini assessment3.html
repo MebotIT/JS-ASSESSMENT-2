@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="shalini assessment3.css" />
+  </head>
+  <body>
+    <header>
+        <center>
+      <h1>My Simple Website</h1>
+      
+    </center>
+    </header>
+    <main>
+      <section>
+        <p>This is the Counter</p>
+      </section>
+      <div>
+        <p>When you click "Button" value increment by 1</p>
+      </div>
+      <div>
+        <br><br>
+    <center>
+        <script>
+            c=0;
+            function count(){
+                c=c+1;
+                document.getElementById("val").innerHTML= c;
+            }
+        </script>
+        <p id="val">0</p>
+      <button onclick="count()" name="b1" id="bt">Click Me!</button>
+    </center>
+    </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Simple Website. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
