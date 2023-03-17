@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assessment</title>
+    <link rel="stylesheet" href="simple.css">
+    <header class="head"><center><h1><text style="color: white;">My Simple Website</text></h1></center>
+        <br><br>
+       <center> <span id="time" style="color: white;"></span></center>
+    </header>
+    
+</head>
+<body>
+    <p>this is the counter</p>
+    <p>when you click</p>
+    <center><input type="button" value="click me" class="btn" onclick="show();"></center>
+    <footer class="foot">
+        <div class="te"><center><h1><text>My Simple Website</text></h1></center></div>
+    </footer>
+    <script>
+        function show(){
+            var date=new Date();
+            document.getElementById("time").innerHTML=date;
+        }
+    </script>
+
+</body>
+</html>
